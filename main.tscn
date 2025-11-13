@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8rcppcpsy5xc"]
+
+[ext_resource type="PackedScene" uid="uid://ckxh6ny6yv211" path="res://rydder.tscn" id="1_ig7tw"]
+
+[node name="main" type="Node"]
+
+[node name="rydder" parent="." instance=ExtResource("1_ig7tw")]
