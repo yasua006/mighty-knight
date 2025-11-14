@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: int = 500
+@export var speed: int = 600
 
 
 func _process(_delta: float) -> void:
@@ -15,6 +15,10 @@ func _process(_delta: float) -> void:
 		velocity.y += 20
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 20
+	
+	# håndtere samtidig bevegelser
+	if velocity.length() < 0:
+		velocity = velocity.normalized() * speed
 	
 	# bevege
 	move_and_slide()

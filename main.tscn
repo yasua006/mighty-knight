@@ -5,3 +5,10 @@
 [node name="main" type="Node"]
 
 [node name="rydder" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="bilde_bg" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
