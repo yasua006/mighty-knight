@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boy3762q71vgg"
-path="res://.godot/imported/skeleton movements 3.png-eab17e216df8af4c90a9d7f53469b8ba.ctex"
+uid="uid://ca58dlskt1sgk"
+path="res://.godot/imported/Skeleton React.png-69ad603de4e22e05d7f15be4a21b7473.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://skeleton movements 3.png"
-dest_files=["res://.godot/imported/skeleton movements 3.png-eab17e216df8af4c90a9d7f53469b8ba.ctex"]
+source_file="res://Skeleton/Sprite Sheets/Skeleton React.png"
+dest_files=["res://.godot/imported/Skeleton React.png-69ad603de4e22e05d7f15be4a21b7473.ctex"]
 
 [params]
 

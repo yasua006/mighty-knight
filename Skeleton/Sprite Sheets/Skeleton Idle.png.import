@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0e0a8dna122a"
-path="res://.godot/imported/skeleton movements 2.png-31518dfbd1dc0c75b565311acd3db5ef.ctex"
+uid="uid://cx2gjo4o8e4ve"
+path="res://.godot/imported/Skeleton Idle.png-6238defc83ead91f25546e6a6839db45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://skeleton movements 2.png"
-dest_files=["res://.godot/imported/skeleton movements 2.png-31518dfbd1dc0c75b565311acd3db5ef.ctex"]
+source_file="res://Skeleton/Sprite Sheets/Skeleton Idle.png"
+dest_files=["res://.godot/imported/Skeleton Idle.png-6238defc83ead91f25546e6a6839db45.ctex"]
 
 [params]
 
