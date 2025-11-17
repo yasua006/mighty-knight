@@ -1,10 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8rcppcpsy5xc"]
+[gd_scene load_steps=4 format=3 uid="uid://b8rcppcpsy5xc"]
 
 [ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckxh6ny6yv211" path="res://rydder.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://bmpkrmkl77y4d" path="res://hov_box.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" path="res://boks_HOVED.tscn" id="4_lquwl"]
-[ext_resource type="PackedScene" uid="uid://bxgw17c1scpyy" path="res://bane-ressuser/boks_en.tscn" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://ccmqggyeo6bdp" path="res://level_1.tscn" id="3_h2yge"]
 
 [node name="main" type="Node"]
 
@@ -12,9 +10,10 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -33.0
-offset_right = 437.0
-offset_bottom = 399.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 438.0
+offset_bottom = 433.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.73259485, 0.6581206)
@@ -22,23 +21,4 @@ texture = ExtResource("1_0xm2m")
 
 [node name="rydder" parent="." instance=ExtResource("1_ig7tw")]
 
-[node name="hov_box" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(309, 465)
-
-[node name="hov_box2" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(488, 465)
-
-[node name="StaticBody2D" parent="." instance=ExtResource("4_lquwl")]
-position = Vector2(88, 465)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("4_lquwl")]
-position = Vector2(711, 465)
-
-[node name="Boksen" parent="." instance=ExtResource("5_7mycd")]
-position = Vector2(755, 318)
-
-[node name="StaticBody2D3" parent="." instance=ExtResource("4_lquwl")]
-position = Vector2(888, 359)
-
-[node name="StaticBody2D4" parent="." instance=ExtResource("4_lquwl")]
-position = Vector2(1066, 359)
+[node name="level_1" parent="." instance=ExtResource("3_h2yge")]
