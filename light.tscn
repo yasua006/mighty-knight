@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm0yxwvg4a5pp"]
+
+[ext_resource type="Script" uid="uid://bf4u64n71pwjs" path="res://point_light_2d.gd" id="1_hdgcg"]
+
+[node name="Light" type="Node2D"]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture_scale = 9.49
+script = ExtResource("1_hdgcg")
