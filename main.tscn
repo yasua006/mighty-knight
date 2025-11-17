@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8rcppcpsy5xc"]
 
-[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bildeBak.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckxh6ny6yv211" path="res://rydder.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bmpkrmkl77y4d" path="res://hov_box.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://d1fy1m86y6dlu" path="res://boks_HOVED.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" path="res://boks_HOVED.tscn" id="4_lquwl"]
 [ext_resource type="PackedScene" uid="uid://bxgw17c1scpyy" path="res://bane-ressuser/boks_en.tscn" id="5_7mycd"]
 
 [node name="main" type="Node"]

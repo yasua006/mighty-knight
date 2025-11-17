@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://wldn0c7dng16"]
 
-[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bildeBak.png" id="1_7a7rn"]
-[ext_resource type="PackedScene" uid="uid://bwulwkn8ensrj" path="res://static_body_2d.tscn" id="1_saw63"]
+[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_7a7rn"]
+[ext_resource type="PackedScene" path="res://static_body_2d.tscn" id="1_saw63"]
 [ext_resource type="PackedScene" uid="uid://bmpkrmkl77y4d" path="res://hov_box.tscn" id="2_7a7rn"]
-[ext_resource type="PackedScene" uid="uid://bxgw17c1scpyy" path="res://boks_en.tscn" id="3_guhbh"]
+[ext_resource type="PackedScene" uid="uid://bxgw17c1scpyy" path="res://bane-ressuser/boks_en.tscn" id="3_guhbh"]
 
 [sub_resource type="TileSet" id="TileSet_xnn4q"]
 tile_size = Vector2i(128, 128)
