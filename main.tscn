@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8rcppcpsy5xc"]
+[gd_scene load_steps=8 format=3 uid="uid://b8rcppcpsy5xc"]
 
 [ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckxh6ny6yv211" path="res://rydder.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://ccmqggyeo6bdp" path="res://level_1.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://do8tovan8cgce" path="res://HUD.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dfcmbf1vg4ynr" path="res://spill meny.tscn" id="5_lquwl"]
 
 [sub_resource type="Gradient" id="Gradient_h2yge"]
 offsets = PackedFloat32Array(0.15104167, 0.5, 0.5416667)
@@ -57,3 +58,5 @@ height = 300.0
 [node name="level_1" parent="." instance=ExtResource("3_h2yge")]
 
 [node name="HUD" parent="." instance=ExtResource("4_1bvp3")]
+
+[node name="Control" parent="." instance=ExtResource("5_lquwl")]
