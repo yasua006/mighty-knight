@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mighty Knight"
-run/main_scene="uid://bbuy6yd5rwjrl"
+run/main_scene="uid://dyrbrgh4a7juq"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
