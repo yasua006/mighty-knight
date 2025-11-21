@@ -22,7 +22,25 @@ position = Vector2(711, 465)
 position = Vector2(755, 318)
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("2_ihfcg")]
-position = Vector2(888, 359)
+position = Vector2(887, 362)
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("2_ihfcg")]
-position = Vector2(1066, 359)
+position = Vector2(1065, 362)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_ihfcg")]
+position = Vector2(1242, 362)
+
+[node name="hov_box3" parent="." instance=ExtResource("1_hn12h")]
+position = Vector2(1465, 358)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_ihfcg")]
+position = Vector2(1689, 359)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_ihfcg")]
+position = Vector2(1957, 460)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_ihfcg")]
+position = Vector2(2135, 460)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_ihfcg")]
+position = Vector2(2313, 460)

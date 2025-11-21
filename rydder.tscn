@@ -11,10 +11,10 @@ safe_margin = 0.001
 script = ExtResource("1_nw55l")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(594, 310)
+position = Vector2(840, 172)
 scale = Vector2(0.5625, 0.53125)
 texture = ExtResource("2_xv5y4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(594, 310)
+position = Vector2(840, 172)
 shape = SubResource("RectangleShape2D_xv5y4")
