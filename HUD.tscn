@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://do8tovan8cgce"]
 
-[ext_resource type="Script" path="res://hud.gd" id="1_efote"]
+[ext_resource type="Script" uid="uid://d4iesyn2dnxwo" path="res://hud.gd" id="1_efote"]
 [ext_resource type="FontFile" uid="uid://did1kl82tjyty" path="res://Xolonium-Regular.ttf" id="1_k5de2"]
 
 [sub_resource type="Animation" id="Animation_efote"]
@@ -31,7 +31,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5, 0.8, 2, 3),
 "transitions": PackedFloat32Array(1, 0.95, 0.925, 0.8, 0.7),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(100, 0), Vector2(200, 0), Vector2(300, 0), Vector2(1200, 0)]
+"values": [Vector2(0, 150), Vector2(100, 150), Vector2(200, 150), Vector2(300, 150), Vector2(1200, 150)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_efote"]
