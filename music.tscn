@@ -1,3 +1,7 @@
-[gd_scene load_steps=0 format=3 uid="uid://65bv646nx4fc"]
+[gd_scene load_steps=2 format=3 uid="uid://65bv646nx4fc"]
+
+[ext_resource type="AudioStream" uid="uid://t13i6bdvf2mf" path="res://epic-dungeon-beat-259883.mp3" id="1_3h6ak"]
 
 [node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_3h6ak")
+autoplay = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqo4hobomo3uh"]
+
+[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_db4vx"]
+
+[node name="bilde_px" type="Node2D"]
+
+[node name="bildebak" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -323.0
+offset_right = 2078.7563
+offset_bottom = 757.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.73259485, 0.6581206)
+texture = ExtResource("1_db4vx")
+metadata/_edit_use_anchors_ = true
