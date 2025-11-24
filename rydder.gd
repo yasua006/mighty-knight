@@ -1,32 +1,30 @@
 extends CharacterBody2D
-
+ 
 @export var speed: int = 500
-var JUMP_VELOCITY: int = 600
-var basis = 5
-var gravity: int = 500.0
-
+var JUMP_VELOCITY: float = -600.0   # negative = up in Godot
+var gravity: float = 1500.0         # typical platformer gravity
+var pos = position
+ 
 func _physics_process(delta: float):
-	velocity = Vector2.ZERO
-	velocity.y += gravity*delta
-	
-	# hopp (space)
-	if Input.is_action_pressed("jump") and  is_on_floor():
-		velocity.y = JUMP_VELOCITY
-	# bevegelser (WASD / ←↑↓→)
-	if Input.is_action_pressed("move_right"):
-		velocity.x += basis
-	if Input.is_action_pressed("move_left"):
-		velocity.x -= basis
-	if Input.is_action_pressed("move_down"):
-		velocity.y += 5
-	if Input.is_action_pressed("move_up"):
-		velocity.y -= 5
-
-	
-	# håndtere samtidig bevegelser
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
-	
-	# bevege med delta
+ 
+	# Apply gravity only when not on floor
+	if not is_on_floor():
+		velocity.y += gravity * delta
+ 
+	# Jump
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y += JUMP_VELOCITY
+ 
+	# Horizontal movement
+	var dir := Input.get_axis("move_left", "move_right")
+	velocity.x = dir * speed
+ 
+	# Move the character
 	move_and_slide()
+ 
+ 
 	
+ 
+ 
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	position.y -= 300

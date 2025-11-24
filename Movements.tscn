@@ -1,6 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://dlafnm75v3nrm"]
 
-[ext_resource type="Script" uid="uid://cxi1xp40jsldh" path="res://skjelett.gd" id="1_e31ys"]
+[ext_resource type="Script" path="res://skjelett.gd" id="1_e31ys"]
 [ext_resource type="Texture2D" uid="uid://cw31n2aei78kp" path="res://Skeleton/Sprite Sheets/Skeleton Attack.png" id="3_nf1le"]
 [ext_resource type="Texture2D" uid="uid://cx2gjo4o8e4ve" path="res://Skeleton/Sprite Sheets/Skeleton Idle.png" id="4_iy06d"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://do8tovan8cgce"]
 
-[ext_resource type="Script" uid="uid://d4iesyn2dnxwo" path="res://hud.gd" id="1_efote"]
+[ext_resource type="Script" path="res://hud.gd" id="1_efote"]
 [ext_resource type="FontFile" uid="uid://did1kl82tjyty" path="res://Xolonium-Regular.ttf" id="1_k5de2"]
 
 [sub_resource type="Animation" id="Animation_efote"]
@@ -45,6 +45,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1700.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_efote")
@@ -60,13 +61,15 @@ theme_override_fonts/font = ExtResource("1_k5de2")
 theme_override_font_sizes/font_size = 64
 text = "Level 1: Dungeon"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="level_label"]
+[node name="anim" type="AnimationPlayer" parent="level_label"]
 libraries = {
 &"": SubResource("AnimationLibrary_efote")
 }
+movie_quit_on_finish = true
 
 [node name="level_label_timer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
 
+[connection signal="animation_finished" from="level_label/anim" to="." method="_on_anim_animation_finished"]
 [connection signal="timeout" from="level_label_timer" to="." method="_on_level_label_timer_timeout"]
