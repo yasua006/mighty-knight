@@ -12,7 +12,7 @@ func _ready() -> void:
 	
 	ridder = get_tree().root.get_child(1).get_child(1)
 	old_speed = ridder.speed
-	
+	print("gammel hastighet (HUD) ", old_speed)
 	ridder.speed = 0
 
 
@@ -28,7 +28,6 @@ func _on_level_label_timer_timeout() -> void:
 
 func anim_hjelper() -> void:
 	$level_label.hide()
-	
 	ridder.speed = old_speed
 
 

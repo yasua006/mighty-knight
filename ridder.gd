@@ -1,25 +1,28 @@
 extends CharacterBody2D
  
 @export var speed: int = 500
-var JUMP_VELOCITY: float = -500
-var gravity: float = 1500
+var jump_velocity: int = -600
+var gravity: int = 1500
+
+
+func handle_hackers(value: int) -> void:
+	if value < 0 or is_nan(float(value)):
+		value = 0
 
 
 func _physics_process(delta: float):
+	handle_hackers(speed)
+	handle_hackers(jump_velocity)
+	handle_hackers(gravity)
+	
 	# unngå dobbel hopp, trippel hopp, osv.
 	if not is_on_floor():
 		velocity.y += gravity * delta
  
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y += JUMP_VELOCITY
+		velocity.y += jump_velocity
  
 	var dir = Input.get_axis("move_left", "move_right")
 	velocity.x = dir * speed
  
 	move_and_slide()
-	
-
-# brukes ikke
-#func _on_area_2d_area_entered(_area: Area2D) -> void:
-	#position.y -= 300
-	

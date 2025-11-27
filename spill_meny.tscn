@@ -56,6 +56,18 @@ mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 100
 text = "Slutt"
 
+[node name="debounce_start_btn" type="Timer" parent="hoved_container"]
+wait_time = 0.3
+one_shot = true
+
+[node name="debounce_settings_btn" type="Timer" parent="hoved_container"]
+wait_time = 0.3
+one_shot = true
+
+[node name="debounce_quit_btn" type="Timer" parent="hoved_container"]
+wait_time = 0.3
+one_shot = true
+
 [node name="settings_container" type="VBoxContainer" parent="."]
 visible = false
 z_index = 1
@@ -89,6 +101,18 @@ mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 100
 text = "Lukk"
 
+[node name="debounce_animations_btn" type="Timer" parent="settings_container"]
+wait_time = 0.3
+one_shot = true
+
+[node name="debounce_shadows_btn" type="Timer" parent="settings_container"]
+wait_time = 0.3
+one_shot = true
+
+[node name="debounce_close_btn" type="Timer" parent="settings_container"]
+wait_time = 0.3
+one_shot = true
+
 [node name="esc_container" type="VBoxContainer" parent="."]
 visible = false
 layout_mode = 1
@@ -110,6 +134,11 @@ tooltip_text = "Fortsetter spillet"
 text = "Fortsett"
 
 [node name="debounce_esc" type="Timer" parent="esc_container"]
+wait_time = 0.5
+one_shot = true
+
+[node name="debounce_resume_btn" type="Timer" parent="esc_container"]
+wait_time = 0.5
 one_shot = true
 
 [node name="bakgrunn_bilde" type="TextureRect" parent="."]
@@ -145,8 +174,15 @@ autowrap_mode = 2
 [connection signal="pressed" from="hoved_container/start_btn" to="." method="_on_start_btn_pressed"]
 [connection signal="pressed" from="hoved_container/settings_btn" to="." method="_on_settings_btn_pressed"]
 [connection signal="pressed" from="hoved_container/quit_btn" to="." method="_on_exit_btn_pressed"]
+[connection signal="timeout" from="hoved_container/debounce_start_btn" to="." method="_on_debounce_start_btn_timeout"]
+[connection signal="timeout" from="hoved_container/debounce_settings_btn" to="." method="_on_debounce_settings_btn_timeout"]
+[connection signal="timeout" from="hoved_container/debounce_quit_btn" to="." method="_on_debounce_quit_btn_timeout"]
 [connection signal="toggled" from="settings_container/animations_btn" to="." method="_on_animations_btn_toggled"]
 [connection signal="toggled" from="settings_container/shadows_btn" to="." method="_on_shadows_btn_toggled"]
 [connection signal="pressed" from="settings_container/close_btn" to="." method="_on_close_btn_pressed"]
+[connection signal="timeout" from="settings_container/debounce_animations_btn" to="." method="_on_debounce_animations_btn_timeout"]
+[connection signal="timeout" from="settings_container/debounce_shadows_btn" to="." method="_on_debounce_shadows_btn_timeout"]
+[connection signal="timeout" from="settings_container/debounce_close_btn" to="." method="_on_debounce_close_btn_timeout"]
 [connection signal="pressed" from="esc_container/resume_btn" to="." method="_on_resume_btn_pressed"]
 [connection signal="timeout" from="esc_container/debounce_esc" to="." method="_on_debounce_esc_timeout"]
+[connection signal="timeout" from="esc_container/debounce_resume_btn" to="." method="_on_debounce_resume_btn_timeout"]
