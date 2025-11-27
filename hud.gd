@@ -12,7 +12,7 @@ func _ready() -> void:
 	
 	ridder = get_tree().root.get_child(1).get_child(1)
 	old_speed = ridder.speed
-	print("gammel hastighet (HUD) ", old_speed)
+	#print("gammel hastighet (HUD) ", old_speed)
 	ridder.speed = 0
 
 
