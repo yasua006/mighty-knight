@@ -79,7 +79,7 @@ func _on_animations_btn_toggled(toggled_on: bool) -> void:
 	debounces.debounce_animations_btn = true
 	$settings_container/debounce_animations_btn.start()
 	
-	var anim: AnimationPlayer = get_tree().root.get_child(1).get_child(3).get_child(0).get_child(0)
+	var anim: AnimationPlayer = get_tree().root.get_child(1).get_child(4).get_child(0).get_child(0)
 	
 	if toggled_on:
 		anim.active = false
