@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beqdr4wg2dtnx"
-path="res://.godot/imported/en_boks.png-a7d7a85b2d49174cea7ee7ce0fc643d2.ctex"
+uid="uid://brpxjy3jbyis"
+path="res://.godot/imported/Dungeon_Terrain_BgdTiles.png-c023a91ea788acf2b5ccacc2dcb8415a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bane-ressuser/en_boks.png"
-dest_files=["res://.godot/imported/en_boks.png-a7d7a85b2d49174cea7ee7ce0fc643d2.ctex"]
+source_file="res://Terrain/Dungeon_Terrain_BgdTiles.png"
+dest_files=["res://.godot/imported/Dungeon_Terrain_BgdTiles.png-c023a91ea788acf2b5ccacc2dcb8415a.ctex"]
 
 [params]
 

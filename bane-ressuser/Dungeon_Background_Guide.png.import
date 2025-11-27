@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf4y0pi1182hi"
-path="res://.godot/imported/Boks_bakke.png-cb78af580473835bacd71e0952917964.ctex"
+uid="uid://fx0l7yisr3aq"
+path="res://.godot/imported/Dungeon_Background_Guide.png-6adafb6c57af6ced57ba68e31ebee8d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bane-ressuser/Boks_bakke.png"
-dest_files=["res://.godot/imported/Boks_bakke.png-cb78af580473835bacd71e0952917964.ctex"]
+source_file="res://bane-ressuser/Dungeon_Background_Guide.png"
+dest_files=["res://.godot/imported/Dungeon_Background_Guide.png-6adafb6c57af6ced57ba68e31ebee8d3.ctex"]
 
 [params]
 

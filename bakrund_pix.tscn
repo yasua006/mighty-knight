@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b4bwxfoutfhu"]
 
-[ext_resource type="Texture2D" uid="uid://ow0mf3hc4kjk" path="res://bane-ressuser/bilde_bak.png" id="1_ebhka"]
+[ext_resource type="Texture2D" uid="uid://fx0l7yisr3aq" path="res://bane-ressuser/Dungeon_Background_Guide.png" id="1_ebhka"]
 
 [node name="bilde_px" type="Node2D"]
 

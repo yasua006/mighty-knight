@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ow0mf3hc4kjk"
-path="res://.godot/imported/bilde_bak.png-9868bb622cb43e15b8606138ba448acc.ctex"
+uid="uid://digtw1esfr6pp"
+path="res://.godot/imported/Dungeon_Terrain_47Tiles.png-53ffb7d51eeb7629a9a5b024fcc65a37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bane-ressuser/bilde_bak.png"
-dest_files=["res://.godot/imported/bilde_bak.png-9868bb622cb43e15b8606138ba448acc.ctex"]
+source_file="res://Terrain/Dungeon_Terrain_47Tiles.png"
+dest_files=["res://.godot/imported/Dungeon_Terrain_47Tiles.png-53ffb7d51eeb7629a9a5b024fcc65a37.ctex"]
 
 [params]
 
