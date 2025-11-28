@@ -1,23 +1,25 @@
 [gd_scene load_steps=4 format=3 uid="uid://ckxh6ny6yv211"]
 
 [ext_resource type="Script" uid="uid://crogrrescgrb0" path="res://ridder.gd" id="1_nw55l"]
-[ext_resource type="Texture2D" uid="uid://dy17jjjsrxeq8" path="res://icon.svg" id="2_xv5y4"]
+[ext_resource type="Texture2D" uid="uid://cjor8vs1yoiwe" path="res://rider_player.png" id="2_usnvi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xv5y4"]
-size = Vector2(72, 68)
+size = Vector2(27.343761, 50.00001)
 
 [node name="ridder" type="CharacterBody2D"]
 position = Vector2(2, 0)
-scale = Vector2(0.8, 0.8)
+scale = Vector2(1.53, 1.53)
 safe_margin = 0.001
 script = ExtResource("1_nw55l")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2.7499924, -1.0000019)
 scale = Vector2(0.5625, 0.53125)
-texture = ExtResource("2_xv5y4")
+texture = ExtResource("2_usnvi")
+region_enabled = true
+region_rect = Rect2(149, -1, 61, 86)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.7500572, -1.0000153)
-scale = Vector2(0.8, 0.8)
+position = Vector2(-4.062502, 0)
+scale = Vector2(0.7999995, 0.7999995)
 shape = SubResource("RectangleShape2D_xv5y4")
