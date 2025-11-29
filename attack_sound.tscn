@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgi8jf3jva8wp"]
+
+[ext_resource type="AudioStream" uid="uid://dhfk34qeo3typ" path="res://sword-slash-and-swing-185432.mp3" id="1_72a7w"]
+
+[node name="attack_sound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_72a7w")
+max_distance = 500.0

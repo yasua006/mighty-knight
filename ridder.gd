@@ -5,6 +5,11 @@ var jump_velocity: int = -650
 var gravity: int = 1500
 
 
+func _ready() -> void:
+	var game_language = OS.get_locale_language()
+	TranslationServer.set_locale(game_language)
+
+
 func handle_hackers(value: int) -> void:
 	if value < 0 or is_nan(float(value)):
 		value = 0

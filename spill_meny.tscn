@@ -94,12 +94,12 @@ grow_vertical = 2
 [node name="animations_btn" type="CheckButton" parent="settings_container"]
 layout_mode = 2
 tooltip_text = "Toggle animasjoner"
-text = "Disable animations"
+text = "Deaktiver animasjoner"
 
 [node name="shadows_btn" type="CheckButton" parent="settings_container"]
 layout_mode = 2
-tooltip_text = "Toggle shadows"
-text = "Shadows"
+tooltip_text = "Toggle skygger"
+text = "Skygger"
 
 [node name="close_btn" type="Button" parent="settings_container"]
 layout_mode = 2
@@ -169,7 +169,7 @@ anchor_right = 1.0
 offset_left = 17.0
 offset_top = 11.0
 offset_right = 17.0
-offset_bottom = 34.0
+offset_bottom = 122.0
 grow_horizontal = 2
 tooltip_text = "Game title"
 mouse_filter = 0

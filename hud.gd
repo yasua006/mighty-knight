@@ -20,7 +20,7 @@ func _on_level_label_timer_timeout() -> void:
 	$level_label.show()
 	
 	if not $level_label/anim.active:
-		$level_label.position = Vector2(300, 150)
+		$level_label.position = Vector2(100, 150)
 		$anim_av_timer.start()
 	else:
 		$level_label/anim.play("fade_label")

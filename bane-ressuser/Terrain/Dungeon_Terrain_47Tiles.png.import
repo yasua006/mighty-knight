@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yunqb11ijtqd"
-path="res://.godot/imported/Dungeon_Terrain_ExtraTiles.png-a19b78df1a7ac1f6ffd5a100245f7c3d.ctex"
+uid="uid://digtw1esfr6pp"
+path="res://.godot/imported/Dungeon_Terrain_47Tiles.png-31b47b1f551aebcbb66d4ca79c802a0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Terrain/Dungeon_Terrain_ExtraTiles.png"
-dest_files=["res://.godot/imported/Dungeon_Terrain_ExtraTiles.png-a19b78df1a7ac1f6ffd5a100245f7c3d.ctex"]
+source_file="res://bane-ressuser/Terrain/Dungeon_Terrain_47Tiles.png"
+dest_files=["res://.godot/imported/Dungeon_Terrain_47Tiles.png-31b47b1f551aebcbb66d4ca79c802a0f.ctex"]
 
 [params]
 

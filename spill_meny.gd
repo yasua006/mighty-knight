@@ -32,12 +32,13 @@ func _ready() -> void:
 
 # ----hoved menyen----
 func _on_start_btn_pressed() -> void:
-	if debounces.debounce_start_btn: return
-	debounces.debounce_start_btn = true
+	if debounces["debounce_start_btn"]: return
+	debounces["debounce_start_btn"] = true
 	$hoved_container/debounce_start_btn.start()
 	
 	$hoved_container.hide()
 	$bakgrunn_bilde.hide()
+	$tittel.hide()
 	$meny_lys.visible = false
 	
 	music.playing = true
@@ -46,12 +47,12 @@ func _on_start_btn_pressed() -> void:
 
 
 func _on_debounce_start_btn_timeout() -> void:
-	debounces.debounce_start_btn = false
+	debounces["debounce_start_btn"] = false
 
 
 func _on_settings_btn_pressed() -> void:
-	if debounces.debounce_settings_btn: return
-	debounces.debounce_settings_btn = true
+	if debounces["debounce_settings_btn"]: return
+	debounces["debounce_settings_btn"] = true
 	$hoved_container/debounce_settings_btn.start()
 	
 	$hoved_container.hide()
@@ -59,25 +60,25 @@ func _on_settings_btn_pressed() -> void:
 
 
 func _on_debounce_settings_btn_timeout() -> void:
-	debounces.debounce_settings_btn = false
+	debounces["debounce_settings_btn"] = false
 
 
 func _on_quit_btn_pressed() -> void:
-	if debounces.debounce_quit_btn: return
-	debounces.debounce_quit_btn = true
+	if debounces["debounce_quit_btn"]: return
+	debounces["debounce_quit_btn"] = true
 	$hoved_container/debounce_quit_btn.start()
 	
 	get_tree().quit()
 
 
 func _on_debounce_quit_btn_timeout() -> void:
-	debounces.debounce_quit_btn = false
+	debounces["debounce_quit_btn"] = false
 
 
 # ----innstillinger menyen----
 func _on_animations_btn_toggled(toggled_on: bool) -> void:
-	if debounces.debounce_animations_btn: return
-	debounces.debounce_animations_btn = true
+	if debounces["debounce_animations_btn"]: return
+	debounces["debounce_animations_btn"] = true
 	$settings_container/debounce_animations_btn.start()
 	
 	var anim: AnimationPlayer = get_tree().root.get_child(1).get_child(4).get_child(0).get_child(0)
@@ -89,29 +90,40 @@ func _on_animations_btn_toggled(toggled_on: bool) -> void:
 
 
 func _on_debounce_animations_btn_timeout() -> void:
-	debounces.debounce_animations_btn = false
+	debounces["debounce_animations_btn"] = false
 
 
 func _on_shadows_btn_toggled(toggled_on: bool) -> void:
-	if debounces.debounce_shadows_btn: return
-	debounces.debounce_shadows_btn = true
+	if debounces["debounce_shadows_btn"]: return
+	debounces["debounce_shadows_btn"] = true
 	$settings_container/debounce_shadows_btn.start()
 	
-	var lys: PointLight2D = $"/root/main/ridder/PointLight2D"
+	var hoved_lys_list:= {
+		hoved_lys = $"/root/main/hoved_lys",
+		hoved_lys_2 = $"/root/main/hoved_lys_2",
+		hoved_lys_3 = $"/root/main/hoved_lys_3",
+		ridder_lys = $"/root/main/ridder/PointLight2D"
+	}
 	
 	if toggled_on:
-		lys.shadow_enabled = true
+		hoved_lys_list["hoved_lys"].shadow_enabled = true
+		hoved_lys_list["hoved_lys_2"].shadow_enabled = true
+		hoved_lys_list["hoved_lys_3"].shadow_enabled = true
+		hoved_lys_list["ridder_lys"].shadow_enabled = true
 	else:
-		lys.shadow_enabled = false
+		hoved_lys_list["hoved_lys"].shadow_enabled = false
+		hoved_lys_list["hoved_lys_2"].shadow_enabled = false
+		hoved_lys_list["hoved_lys_3"].shadow_enabled = false
+		hoved_lys_list["ridder_lys"].shadow_enabled = false
 
 
 func _on_debounce_shadows_btn_timeout() -> void:
-	debounces.debounce_shadows_btn = false
+	debounces["debounce_shadows_btn"] = false
 
 
 func _on_close_btn_pressed() -> void:
-	if debounces.debounce_close_btn: return
-	debounces.debounce_close_btn = true
+	if debounces["debounce_close_btn"]: return
+	debounces["debounce_close_btn"] = true
 	$settings_container/debounce_close_btn.start()
 	
 	$hoved_container.show()
@@ -119,7 +131,7 @@ func _on_close_btn_pressed() -> void:
 
 
 func _on_debounce_close_btn_timeout() -> void:
-	debounces.debounce_close_btn = false
+	debounces["debounce_close_btn"] = false
 
 
 func esc_meny_hjelper() -> void:
@@ -134,8 +146,8 @@ func _input(event: InputEvent) -> void:
 	if not is_start_done: return
 	
 	if event.is_action_pressed("esc"):
-		if debounces.debounce_esc: return
-		debounces.debounce_esc = true
+		if debounces["debounce_esc"]: return
+		debounces["debounce_esc"] = true
 		$esc_container/debounce_esc.start()
 		
 		if not is_closed:
@@ -148,16 +160,16 @@ func _input(event: InputEvent) -> void:
 
 
 func _on_debounce_esc_timeout() -> void:
-	debounces.debounce_esc = false
+	debounces["debounce_esc"] = false
 
 
 func _on_resume_btn_pressed() -> void:
-	if debounces.debounce_resume_btn: return
-	debounces.debounce_resume_btn = true
+	if debounces["debounce_resume_btn"]: return
+	debounces["debounce_resume_btn"] = true
 	$esc_container/debounce_resume_btn.start()
 	
 	esc_meny_hjelper()
 
 
 func _on_debounce_resume_btn_timeout() -> void:
-	debounces.debounce_resume_btn = false
+	debounces["debounce_resume_btn"] = false
